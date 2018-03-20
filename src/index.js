@@ -3,4 +3,6 @@ import { render } from 'react-dom';
 
 import App from './components';
 
-render(document.getElementById('root'), <App />);
+console.log('qwpojqwpor');
+
+render(<App />, document.getElementById('root'));
