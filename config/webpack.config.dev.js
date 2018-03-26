@@ -22,6 +22,10 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['react-app', 'env'],
+            plugins: [
+              'transform-decorators-legacy',
+              'transform-class-properties',
+            ],
           },
         },
       },

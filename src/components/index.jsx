@@ -1,13 +1,11 @@
 import React from 'react';
+import { observer } from 'mobx-react';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <p> Hello React, your better than Ember.js(ya pizhu!) </p>
-      </div>
-    );
-  }
-}
+const App = observer(({ temperature }) => (
+  <div>
+    <p> {temperature.temperature} </p>
+    <input type="text" onChange={temperature.setChar} />
+  </div>
+));
 
 export default App;
